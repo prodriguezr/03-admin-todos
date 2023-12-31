@@ -8,6 +8,8 @@ Steps to build the database in development
 docker-compose up -d
 ```
 
+---
+
 # Desarrollo
 
 Pasos para levantar la base de datos en desarrollo
