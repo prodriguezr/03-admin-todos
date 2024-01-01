@@ -19,6 +19,8 @@ docker-compose up -d
 
 ```
 npx orisma init
+npx prisma migrate dev
+npx prisma generate
 ```
 
 ---
@@ -38,8 +40,12 @@ DATABASE_URL
 docker-compose up -d
 ```
 
+4.- Execute the following route [for fill todo's](http://localhost:3000/api/seed)
+
 # Comandos de Prisma
 
 ```
 npx orisma init
+npx prisma migrate dev
+npx prisma generate
 ```
