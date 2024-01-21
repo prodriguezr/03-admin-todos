@@ -9,16 +9,19 @@ export const metadata = {
   description: 'SEO Title',
 };
 
-export default async function RestTodosPage() {
+export default async function ServerTodosPage() {
   const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } });
 
   return (
-    <div>
-      <div className='w-full px-3 mx-5 mb-5'>
-        <NewTodo />
-      </div>
+    <>
+      <span className='text-3xl mb-30'>Server Actions</span>
+      <div>
+        <div className='w-full px-3 mx-5 mb-5'>
+          <NewTodo />
+        </div>
 
-      <TodosGrid todos={todos} />
-    </div>
+        <TodosGrid todos={todos} />
+      </div>
+    </>
   );
 }
